@@ -1,0 +1,5 @@
+ErrorDocument 404 /admin/404.php
+ErrorDocument 500 /admin/500.php
+RewriteEngine  on 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ $1.php
